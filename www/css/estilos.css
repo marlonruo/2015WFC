@@ -340,19 +340,19 @@ body {
 #bt_start {
 	position: absolute;
 	height: 19%;
-	top: 76%;
+	top: 80%;
 	left: 50%;
 	cursor: pointer
 }
 #t_exi {
-	top: 4%;
+	top: 2%;
 	height: 13%;
 	width: 100%;
 	color: #fff;
 	text-shadow: 1px 1px 2px rgba(28, 56, 133, 0.5);
 }
 #t_here {
-	top: 23%;
+	top: 18%;
 	height: 7%;
 	width: 100%;
 	color: #fff;
@@ -623,14 +623,14 @@ body {
 	background-size:auto 30px;
 }
 .horario_temas {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: #ff0099;
 	padding: 20px;
 	padding-left: 30%;
 	padding-right: 8%
 }
 .horario_todo {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: #333;
 	padding: 20px;
 	padding-left: 30%;
@@ -779,3 +779,32 @@ body {
 	overflow: hidden;
 	background-color: #FFFFFF
 }
+
+
+
+
+
+
+@media screen and (max-width: 2500px){
+   #t1_t1 { font-size: 4.5rem;
+   line-height:5rem }
+   #t1_t2, #email, #pass, .tes_chico2 { font-size: 1.6rem;
+   line-height:1.8rem }
+   .horario_temas {
+	font-size: 1.2rem;}
+	.horario_todo {
+	font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 500px){
+   #t1_t1 { font-size: 2.8rem;
+   line-height:3rem }
+   #t1_t2, #email, #pass, .tes_chico2 { font-size: 1.2rem;
+   line-height:1.4rem }
+   .horario_temas {
+	font-size: 0.9rem;}
+	.horario_todo {
+	font-size: 0.9rem;}
+}
+
+
