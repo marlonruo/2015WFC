@@ -802,9 +802,9 @@ font-size:40px;
 
 
 
-@media screen and (max-width: 2500px){
+@media (max-height: 4000px) and (min-height: 701px) {
    #t1_t1 { font-size: 4.5rem;
-   line-height:5rem }
+   line-height:4.2rem }
    #t1_t2, #email, #pass, .tes_chico2 { font-size: 1.6rem;
    line-height:1.8rem }
    .horario_temas {
@@ -813,11 +813,11 @@ font-size:40px;
 	font-size: 1.2rem;}
 }
 
-@media screen and (max-width: 800px){
-   #t1_t1 { font-size: 2.8rem;
-   line-height:3rem }
-   #t1_t2, #email, #pass, .tes_chico2 { font-size: 1.2rem;
-   line-height:1.4rem }
+@media (max-height: 700px) and (min-height: 100px) {
+   #t1_t1 { font-size: 2.6rem;
+   line-height:2.6rem }
+   #t1_t2, #email, #pass, .tes_chico2 { font-size: 1.1rem;
+   line-height:1.2rem }
    .horario_temas {
 	font-size: 0.9rem;}
 	.horario_todo {
