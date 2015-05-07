@@ -270,11 +270,15 @@
 <!--///////////REGISTRO///////////-->
 
 <div id="registro" style="display:none;">
-  <div class="publi"></div>
+  <div class="publi" style="z-index:10; background-color:#FFFFFF"></div>
   <div style="width:100%; height:93%; position:absolute; top:7%"> <img src="imagenes/fondo4.jpg" width="100%" height="100%" alt="fondo" style="position:absolute"/>
+    
+    
+    <div id="mover" style="position:absolute; width:100%; height:100%;">
     <div id="t_reg" class="texto_carbon">REGISTER AN<br>
       ACCOUNT</div>
     <div id="t_ple" class="texto_helvetica" style="display:none">* Password does not match</div>
+    <div id="cancelar" class="texto_helvetica">Back to loguin</div>
     <img id="pass2" src="imagenes/pass.png"/> <img class="campo" src="imagenes/campo.png" style="top:22%"/>
     <form name="forma_registro" id="forma_registro" method="post" action="http://marlonruo.com/wfc2015/phps/enviar.php">
       <div class="caja" style="top: 22%;">
@@ -297,6 +301,8 @@
       </div>
       <input type="submit" id="bt_registro" style="cursor:pointer" value="" tabindex="7">
     </form>
+    </div>
+    
   </div>
 </div>
 
@@ -420,37 +426,40 @@
         
 
         function fborrar1(){
-
+			$('#mover').stop().animate({top:'0%'}, 800);
 			if(document.getElementById('f_nombre').value=='First name'){
 
 				document.getElementById('f_nombre').value=''
+				
 
 			}
 
 		}
 
 		function fchecar1(){
-
+			$('#mover').stop().animate({top:'0%'}, 800);
 			if(document.getElementById('f_nombre').value==''){
 
 				document.getElementById('f_nombre').value='First name'
-
+				
+				
 			}
 
 		}
 
 		function fborrar2(){
-
+			$('#mover').stop().animate({top:'-8.5%'}, 800);
 			if(document.getElementById('f_apellido').value=='Last name'){
 
 				document.getElementById('f_apellido').value=''
+				
 
 			}
 
 		}
 
 		function fchecar2(){
-
+			$('#mover').stop().animate({top:'0%'}, 800);
 			if(document.getElementById('f_apellido').value==''){
 
 				document.getElementById('f_apellido').value='Last name'
@@ -460,7 +469,7 @@
 		}
 
 		function fborrar3(){
-
+			$('#mover').stop().animate({top:'-17%'}, 800);
 			if(document.getElementById('f_telefono').value=='Phone number'){
 
 				document.getElementById('f_telefono').value=''
@@ -470,7 +479,7 @@
 		}
 
 		function fchecar3(){
-
+			$('#mover').stop().animate({top:'0%'}, 800);
 			if(document.getElementById('f_telefono').value==''){
 
 				document.getElementById('f_telefono').value='Phone number'
@@ -480,7 +489,7 @@
 		}
 
 		function fborrar4(){
-
+			$('#mover').stop().animate({top:'-25.5%'}, 800);
 			if(document.getElementById('f_email').value=='E-mail'){
 
 				document.getElementById('f_email').value=''
@@ -490,7 +499,7 @@
 		}
 
 		function fchecar4(){
-
+			$('#mover').stop().animate({top:'0%'}, 800);
 			if(document.getElementById('f_email').value==''){
 
 				document.getElementById('f_email').value='E-mail'
@@ -500,7 +509,7 @@
 		}
 
 		function fborrar5(){
-
+			$('#mover').stop().animate({top:'-35%'}, 800);
 			if(document.getElementById('f_pass').value=='Password'){
 
 				document.getElementById('f_pass').value=''
@@ -512,7 +521,7 @@
 		}
 
 		function fchecar5(){
-
+			$('#mover').stop().animate({top:'0%'}, 800);
 			if(document.getElementById('f_pass').value==''){
 
 				document.getElementById('f_pass').value='Password'
@@ -524,7 +533,7 @@
 		}
 
 		function fborrar6(){
-
+			$('#mover').stop().animate({top:'-44%'}, 800);
 			if(document.getElementById('f_pass2').value=='Confirm your password'){
 
 				document.getElementById('f_pass2').value=''
@@ -536,7 +545,7 @@
 		}
 
 		function fchecar6(){
-
+			$('#mover').stop().animate({top:'0%'}, 800);
 			if(document.getElementById('f_pass2').value==''){
 
 				document.getElementById('f_pass2').value='Confirm your password'
@@ -593,7 +602,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios">SCHEDULES</div>
         <div class="texto_neo fecha_horarios">May 2015</div>
       </div>
       <div id="dia1" class="dia" style="background-color:#ebfbfc">
@@ -656,7 +665,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios2a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios2a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios2a">Wednesday, 20 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita" style="position:absolute; left:40%; top:20%">
@@ -712,7 +721,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios3a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios3a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios3a">Thursday, 21 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita2" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita2" style="position:absolute; left:40%; top:20%">
@@ -776,7 +785,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios4a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios4a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios4a">Friday, 22 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita3" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita3" style="position:absolute; left:40%; top:20%">
@@ -839,7 +848,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios5a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios5a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios5a">Wednesday, 20 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita4" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita4" style="position:absolute; left:40%; top:20%">
@@ -913,7 +922,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios6a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios6a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios6a">Wednesday, 20 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita5" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita5" style="position:absolute; left:40%; top:20%">
@@ -979,7 +988,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios7a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios7a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios7a">Wednesday, 20 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita6" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita6" style="position:absolute; left:40%; top:20%">
@@ -1047,7 +1056,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios8a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios8a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios8a">Wednesday, 20 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita7" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita7" style="position:absolute; left:40%; top:20%">
@@ -1114,7 +1123,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios9a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios9a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios9a">Thursday, 21 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita8" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita8" style="position:absolute; left:40%; top:20%">
@@ -1178,7 +1187,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios10a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios10a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios10a">Thursday, 21 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita9" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita9" style="position:absolute; left:40%; top:20%">
@@ -1246,7 +1255,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios11a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios11a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios11a">Thursday, 21 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita10" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita10" style="position:absolute; left:40%; top:20%">
@@ -1315,7 +1324,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios12a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios12a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios12a">Thursday, 21 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita11" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita11" style="position:absolute; left:40%; top:20%">
@@ -1382,7 +1391,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios13a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios13a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios13a">Thursday, 21 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita12" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita12" style="position:absolute; left:40%; top:20%">
@@ -1450,7 +1459,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios14a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios14a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios14a">Friday, 22 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita13" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita13" style="position:absolute; left:40%; top:20%">
@@ -1518,7 +1527,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios15a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios15a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios15a">Friday, 22 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita14" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita14" style="position:absolute; left:40%; top:20%">
@@ -1588,7 +1597,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios16a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios16a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios16a">Friday, 22 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita15" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita15" style="position:absolute; left:40%; top:20%">
@@ -1657,7 +1666,7 @@
   <div style="width:100%; height:93%; position:absolute; top:7%">
     <div class="contenido">
       <div class="titulo_horarios2">
-        <div class="texto_carbon titulo_horarios17a">SHEDULES</div>
+        <div class="texto_carbon titulo_horarios17a">SCHEDULES</div>
         <div class="texto_neo fecha_horarios17a">Friday, 22 May 2015</div>
         <img class="regresa" src="imagenes/atras.png" height="30%" style="position:absolute; left:30%; top:35%"/> <img class="bolita16" src="imagenes/bolita.png" height="60%" style="position:absolute; left:40%; top:20%"/>
         <div class="contiene_bolita16" style="position:absolute; left:40%; top:20%">
@@ -5738,7 +5747,17 @@
 		
 
 		
+		$("#cancelar").click(function(){
 
+		  window.location.href = '#log'
+
+		  $('#login').fadeIn(400)
+
+		  $('#registro').fadeOut(400)
+
+		  ini_log()
+
+	    });
 		
 
 		$(".atr_qr").click(function(){
@@ -9551,6 +9570,7 @@ saveToPhotoAlbum: true });
 		alert('Calendar error: ' + JSON.stringify(msg));
 	  }
 
+		window.plugin.statusbarOverlay.hide();
 		
 
         </script> 

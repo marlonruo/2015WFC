@@ -46,6 +46,9 @@
 	<preference name="SplashScreen" value="foo" />
 	<preference name="SplashScreenDelay" value="10000" />
 	<preference name="SplashMaintainAspectRatio" value="true|false" />
+	
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="UIWebViewBounce" value="false" />
     <!--
         Define a specific version of PhoneGap to build into your app.
         <preference name="phonegap-version"       value="3.5.0" />
@@ -75,6 +78,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 	<gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
 	<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
+	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" />
 	
 	
 
