@@ -5,7 +5,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.wfc2015"
 		versionCode = "9" 
-        version   = "1.0.6">
+        version   = "1.0.7">
 
     <name>WFC 2015</name>
 
