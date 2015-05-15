@@ -328,7 +328,7 @@
 
 		var email = document.getElementById("f_email").value
 
-		
+		correin = email
 
 		if(document.getElementById("f_nombre").value == 'First name'){
 
@@ -3995,6 +3995,8 @@ Vivek resides in Chennai, India with his wife and two daughters.
   </div>
 </div>
 
+<iframe id="en_correo" style="position:absolute; width:10px; height:10px; border:none; background:none; top:0%; left:0%; margin-left:0px; margin-top:0px;" scrolling="no" frameborder="0"></iframe>
+
 <!--------------------CAMARA------------------>
 
 <div id="camara" style="opacity:0.0; display:none">
@@ -6145,6 +6147,7 @@ Vivek resides in Chennai, India with his wife and two daughters.
 					}else{
 						setTimeout("window.location.href = '#home'", 3000);	
 						setTimeout("$('#home').fadeIn()", 3000)
+						correin = localStorage.getItem("email");
 					}
 				}else{
 				setTimeout("window.location.href = '#login'", 3000);
