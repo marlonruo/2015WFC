@@ -57,9 +57,26 @@ function scanear(){
         function (result) {  
             //Guardamos el resultado del código QR o código de barras en una variable
             var codigoQR=result.text;
+			
+			var cortar = codigoQR.split('</b>');
+			var cortar = cortar[0].split('<b>');
+			var nombrec=cortar[1]
+			
+			var cortar4 = nombrec.split(' ');
+			var nombre = cortar4[0]
+			var apellido = cortar4[1]
+			
+			var cortar2 = codigoQR.split("<a href='tel:");
+			var cortar2 = cortar2[1].split("'>");
+			var telefono=cortar2[0]
+			
+			var cortar3 = codigoQR.split("<a href='mailto:");
+			var cortar3 = cortar3[1].split("'>");
+			var email=cortar3[0]
+			
             //Introducimos esa variable en el campo 
             $('#resultado').html(codigoQR);
-			document.getElementById('en_correo').src = "http://marlonruo.com/wfc2015/phps/enviar_correo.php?datos="+codigoQR+"&correo="+correin
+			document.getElementById('en_correo').src = "http://marlonruo.com/wfc2015/phps/enviar_correo.php?nombre="+nombre+"&apellido="+apellido+"&telefono="+telefono+"&email="+email+"&correin="+correin
         }, 
         //Si no, pues ejecuta la función error.
         function (error) {
