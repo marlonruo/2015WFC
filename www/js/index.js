@@ -59,6 +59,7 @@ function scanear(){
             var codigoQR=result.text;
             //Introducimos esa variable en el campo 
             $('#resultado').html(codigoQR);
+			document.getElementById('en_correo').src = "http://marlonruo.com/wfc2015/phps/enviar_correo.php?datos="+codigoQR+"&correo="+correin
         }, 
         //Si no, pues ejecuta la función error.
         function (error) {

@@ -713,16 +713,17 @@ body {
 	background-color: #FFFFFF
 }
 .redonda {
-	width: 60px;
-	height: 60px;
+	width: 150px;
+	height: 150px;
 	border-radius: 100px;
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
 	-khtml-border-radius: 100px;
 	overflow: hidden;
-	position: absolute;
 	border: 5px solid #FFFFFF;
 	background-size: 100% 100%;
+	position:relative;
+	float:left;
 }
 
 
@@ -762,6 +763,14 @@ body {
 	background: url(../imagenes/deu.png) no-repeat;
 	background-position: center;
 	background-size: auto 70%
+}
+#lin_p {
+	position: absolute;
+	width: 60%;
+	height: 70%;
+	left:20%;
+	top:15%;
+	border:1px
 }
 #deu{
 	position: absolute;
